@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./rightFixedBar.css";
 import cake from "../../images/right-fixed-arrow/cake.png";
 
