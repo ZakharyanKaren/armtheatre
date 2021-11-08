@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Saira+Condensed&display=swap");
+
+.header-info {
+  background-color: #1179a7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 130px;
+}
+
+.header-info__email {
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.search-langSwitch {
+  display: flex;
+  align-items: center;
+}
+
+.header-section {
+  background-image: linear-gradient(
+    90deg,
+    rgba(7, 24, 50, 1) 25%,
+    rgba(81, 64, 115, 1) 80%,
+    rgba(7, 24, 50, 1) 120%
+  );
+  filter: drop-shadow(0px 17px 4px rgba(0, 0, 0, 0.25));
+}
+
+.header-main-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 26px 130px 0;
+}
+
+.main-nav-logo {
+  background-image: url("../../images/navBar/logo.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 164px;
+  height: 138px;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+}
+
+.main-nav-sections {
+  position: relative;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 525px;
+  margin-bottom: 25px;
+}
+
+.main-nav-btn {
+  background-color: inherit;
+  color: #afb8f1;
+  border: none;
+  height: 17px;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.main-nav-active::after {
+  content: "";
+  display: block;
+  border-bottom: 1px solid #838be1;
+  width: 80%;
+  margin: 0px auto 0;
+  transform: translate(0px, 11px);
+  transition: 0.5s;
+}
+
+.header-line {
+  display: flex;
+  align-items: center;
+  padding-bottom: 25px;
+}
+
+.header-line p {
+  font-family: "Saira Condensed", sans-serif;
+  text-align: left;
+  margin: 0 2px 0 12px;
+  font-size: 13px;
+  color: #cae6f5;
+  line-height: 132%;
+  letter-spacing: 0.805em;
+  text-shadow: 16px 6px 5px rgba(0, 0, 0, 0.25);
+}
+
+.header-line::before {
+  content: "";
+  background-image: url("../../images/navBar/Line\ 1.png");
+  height: 2px;
+  width: 147px;
+}
+
+.header-line::after {
+  content: "";
+  background-image: url("../../images/navBar/Line\ 2.png");
+  height: 2px;
+  width: 100%;
+}

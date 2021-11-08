@@ -1,0 +1,16 @@
+.search {
+  width: 32px;
+  height: 32px;
+  margin-right: 12px;
+}
+.search button {
+  background-image: url("../../../images/navBar/search_btn.png");
+  background-color: initial;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+}

@@ -1,0 +1,84 @@
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 80px;
+  height: 35px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 56px;
+  background-color: #071832;
+}
+
+.arm {
+  position: absolute;
+  right: 5px;
+  top: 7px;
+  color: #838be1;
+  font-size: 18px;
+  line-height: 21px;
+  transition: 0.4s;
+}
+
+.eng {
+  opacity: 0;
+  position: absolute;
+  right: 37px;
+  top: 7px;
+  color: #838be1;
+  font-size: 18px;
+  line-height: 21px;
+  transition: 0.4s;
+}
+/* disable selecting language text */
+.arm,
+.eng {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Chrome/Safari/Opera */
+  -khtml-user-select: none; /* Konqueror */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently not supported by any browser */
+}
+
+.slider::before {
+  position: absolute;
+  content: "";
+  width: 35px;
+  height: 35px;
+  left: 0;
+  top: 0;
+
+  border-radius: 50%;
+  background-image: url("../../../images/navBar/language_flag.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  transition: 0.5s;
+  z-index: 1;
+}
+
+.switch input:checked + .slider .arm {
+  opacity: 0;
+  transition: 0.4s;
+}
+.switch input:checked + .slider .eng {
+  opacity: 1;
+  transition: 0.4s;
+}
+
+.switch input:checked + .slider::before {
+  transform: translate(45px);
+}

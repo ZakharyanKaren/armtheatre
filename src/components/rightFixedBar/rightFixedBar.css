@@ -1,0 +1,60 @@
+.right-fixed-bar {
+  position: absolute;
+  width: 93px;
+  height: 465px;
+  right: 0;
+  color: #ffffff;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #838be1;
+  border-radius: 33px 0px 0px 33px;
+  top: 30%;
+  z-index: 1000;
+  cursor: pointer;
+  transition: 0.5;
+}
+
+.right-fixed-bar::before {
+  content: "";
+  position: absolute;
+  background-image: url("../../images//right-fixed-arrow/arrow.png");
+  background-repeat: no-repeat;
+  width: 9px;
+  height: 22px;
+  left: 7px;
+}
+
+.right-fixed-bar p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 23px;
+  text-transform: uppercase;
+}
+
+.cake {
+  margin-bottom: 20px;
+}
+
+.right-fixed-bar:hover {
+  width: 328px;
+  height: 1008px;
+  justify-content: flex-start;
+}
+
+.right-fixed-bar:hover .cake {
+  display: none;
+}
+
+.right-fixed-bar:hover::before {
+  background-image: none;
+}
+
+.right-fixed-bar:hover .birthday-text {
+  writing-mode: horizontal-tb;
+  margin-top: 28px;
+  margin-bottom: 32px;
+}
